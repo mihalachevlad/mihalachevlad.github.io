@@ -1,3 +1,26 @@
-<h1>Hello, HTML!</h1>
-<p>If everything went right, you should see this text.</p>
-<p>Yipee!!</p>
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .effect {
+            width: 100%;
+            height: 100%;
+            background-color: radial-gradient(circle, red, green, blue, yellow);
+            animation: effect 5s infinite alternate;
+        }
+        @keyframes effect {
+            0% {
+                hue-shift: 0deg;
+            }
+            50% {
+                hue-shift: 180deg;
+            }
+            100% {
+                hue-shift: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="effect"></div>
+</body>
